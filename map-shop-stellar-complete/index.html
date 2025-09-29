@@ -1,79 +1,145 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="id">
+<!--
+	Stellar by HTML5 UP - html5up.net | @ajlkn
+	Disesuaikan untuk MapSnap oleh FZL.
+-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Map Shop — Demo</title>
-
-  <!-- Stellar's main.css (kept from template) -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-
-  <!-- Extra CSS -->
-  <link rel="stylesheet" href="assets/css/extra.css" />
-
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
-
-  <style>
-    #map { height: 420px; width: 100%; border-radius: 8px; }
-    .product-grid { display:flex; flex-wrap:wrap; gap:1rem; }
-    .product-card { width:calc(33.333% - 0.66rem); background:#fff; border-radius:8px; padding:12px; box-shadow:0 2px 6px rgba(0,0,0,.08); }
-    @media (max-width:900px){ .product-card{ width:calc(50% - 0.5rem);} }
-    @media (max-width:600px){ .product-card{ width:100%; } }
-  </style>
+    <title>MapSnap - Jual Peta Powerpoint Editable Profesional</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
+<body class="is-preload">
 
-  <header id="header">
-    <h1><a href="#">Map Shop</a></h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Produk</a>
-      <a href="#">Kontak</a>
-    </nav>
-  </header>
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-  <main id="main" class="container">
-    <section>
-      <h2>Produk Kami (Map & Katalog)</h2>
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1>MapSnap</h1>
+            <p>Jual Peta Powerpoint (PPT) Profesional dan Editable<br />
+            Didesain oleh FZL.</p>
+        </header>
 
-      <div style="display:grid; grid-template-columns: 1fr 380px; gap:1.25rem;">
-        <div>
-          <div id="map"></div>
-          <div style="margin-top:1rem;">
-            <input id="search" placeholder="Cari produk atau daerah..." style="width:100%; padding:8px; border-radius:6px; border:1px solid #ddd;" />
-          </div>
-          <div id="list" class="product-grid" style="margin-top:1rem;"></div>
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#intro" class="active">Pendahuluan</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#cara-pesan">Cara Pesan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Introduction -->
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>Peta Presentasi Profesional</h2>
+                        </header>
+                        <p>Selamat datang di MapSnap. Kami menyediakan peta presentasi berkualitas tinggi yang dapat diedit sepenuhnya. Tingkatkan visualisasi data Anda dengan produk kami yang dibuat secara profesional untuk memenuhi berbagai kebutuhan.</p>
+                    </div>
+                    <span class="image"><img src="https://placehold.co/600x400/e37682/ffffff?text=MapSnap" alt="MapSnap Showcase" /></span>
+                </div>
+            </section>
+
+            <!-- Produk Section -->
+            <section id="produk" class="main special">
+                <header class="major">
+                    <h2>Katalog Produk</h2>
+                    <p>Pilih peta yang Anda butuhkan untuk proyek presentasi Anda.<br />Semua peta 100% editable, berkualitas tinggi, dan mudah digunakan.</p>
+                </header>
+                <ul class="features">
+                    <li>
+                        <h3>Peta Indonesia (38 Provinsi)</h3>
+                        <p>Peta lengkap 38 provinsi di Indonesia. Aset terbaik untuk presentasi nasional. Setiap provinsi dapat diwarnai dan diberi data secara terpisah. <strong>Harga: Rp 125.000</strong></p>
+                        <ul class="actions special"><li><a href="#" class="button primary">Beli Sekarang</a></li></ul>
+                    </li>
+                    <li>
+                        <h3>Peta Pulau Sumatera</h3>
+                        <p>Peta seluruh provinsi di Pulau Sumatera, lengkap dengan nama ibu kota dan batas wilayah yang akurat. <strong>Harga: Rp 75.000</strong></p>
+                        <ul class="actions special"><li><a href="#" class="button primary">Beli Sekarang</a></li></ul>
+                    </li>
+                    <li>
+                        <h3>Peta Provinsi Maluku</h3>
+                        <p>Peta detail per kabupaten/kota. Cocok untuk presentasi data demografi, dilengkapi dengan label yang jelas. <strong>Harga: Rp 50.000</strong></p>
+                         <ul class="actions special"><li><a href="#" class="button primary">Beli Sekarang</a></li></ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Cara Pesan Section -->
+            <section id="cara-pesan" class="main special">
+                <header class="major">
+                    <h2>Cara Pemesanan Sangat Mudah</h2>
+                </header>
+                <ul class="features">
+                    <li>
+                        <span class="icon major style1 fa-mouse-pointer"></span>
+                        <h3>1. Pilih & Bayar</h3>
+                        <p>Pilih peta yang Anda inginkan dan lakukan pembayaran melalui metode yang tersedia.</p>
+                    </li>
+                    <li>
+                        <span class="icon major style3 fa-envelope-open-text"></span>
+                        <h3>2. Terima Email</h3>
+                        <p>Link download file PPT akan otomatis dikirimkan ke alamat email Anda setelah pembayaran berhasil.</p>
+                    </li>
+                    <li>
+                        <span class="icon major style5 fa-download"></span>
+                        <h3>3. Download & Gunakan</h3>
+                        <p>Unduh file-nya dan langsung gunakan untuk memperkaya visual presentasi Anda.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Kontak Section -->
+            <section id="kontak" class="main special">
+                <header class="major">
+                    <h2>Hubungi Kami</h2>
+                    <p>Punya pertanyaan atau butuh peta custom? Jangan ragu untuk menghubungi kami.<br />
+                    Kami siap membantu Anda.</p>
+                </header>
+                <footer class="major">
+                    <ul class="actions special">
+                        <li><a href="mailto:support@mapsnap.com" class="button primary">Kirim Email ke support@mapsnap.com</a></li>
+                    </ul>
+                </footer>
+            </section>
+
         </div>
 
-        <aside style="background:#fafafa; padding:12px; border-radius:8px;">
-          <h3>Keranjang</h3>
-          <div id="cart-list" style="min-height:120px;"></div>
-          <div style="margin-top:10px;">
-            <strong>Total: Rp <span id="cart-total">0</span></strong>
-          </div>
-          <button id="checkoutBtn" style="margin-top:10px; width:100%; padding:10px; border-radius:6px;">Checkout</button>
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Tentang MapSnap</h2>
+                <p>MapSnap adalah penyedia aset digital berupa peta presentasi editable dalam format PowerPoint. Misi kami adalah membantu para profesional, mahasiswa, dan siapa saja untuk membuat presentasi yang lebih menarik dan informatif dengan visual data yang akurat.</p>
+            </section>
+            <section>
+                <h2>Kontak Kami</h2>
+                <dl class="alt">
+                    <dt>Email</dt>
+                    <dd><a href="#">support@mapsnap.com</a></dd>
+                </dl>
+            </section>
+            <p class="copyright">&copy; MapSnap. Didesain oleh: FZL. Template: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        </footer>
 
-          <div id="checkoutForm" style="display:none; margin-top:12px;">
-            <h4>Form Checkout</h4>
-            <input id="name" placeholder="Nama" style="width:100%; padding:8px; margin-bottom:6px;" />
-            <input id="phone" placeholder="No. HP" style="width:100%; padding:8px; margin-bottom:6px;" />
-            <textarea id="address" placeholder="Alamat" style="width:100%; padding:8px;"></textarea>
-            <button id="submitOrder" style="margin-top:8px; width:100%; padding:8px;">Kirim Pesanan (Demo)</button>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
+    </div>
 
-  <footer id="footer" style="text-align:center; padding:24px;">
-    <p>&copy; Map Shop — Demo</p>
-  </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-
-  <!-- jQuery included by Stellar template; keep order -->
-  <script src="assets/js/app.js"></script>
 </body>
 </html>
