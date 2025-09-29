@@ -1,0 +1,6 @@
+/* extra.css - small style tweaks */
+body { background: #f5f7fb; }
+h2 { margin-bottom: 0.5rem; }
+button { background: #2b6cb0; color: #fff; border: none; padding:6px 8px; border-radius:6px; cursor:pointer; }
+button:hover { opacity:0.95; }
+input, textarea { border:1px solid #ddd; border-radius:6px; }
